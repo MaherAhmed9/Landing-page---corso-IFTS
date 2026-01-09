@@ -3,9 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
-    background: url("../img/hero-image.jpg") no-repeat;
-    background-size: cover;
+    height: 55vh;
+    background: url("https://nuovaeducazione.it/wp-content/uploads/2019/10/open-day-2019-20-header-mail-01.png")
+        no-repeat;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-position: center;
 }
 
 h1 {
@@ -14,11 +18,11 @@ h1 {
 
 .hero-title {
     font-size: 3rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .subtitle {
-    color: white;
+    color: black;
 }
 
 .button {
@@ -89,4 +93,137 @@ h1 {
     to {
         left: 100%;
     }
+}
+
+.section-why-choose {
+    background-color: #f7fafc;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.margin {
+    margin-top: 2.5%;
+}
+
+.reasons {
+    width: 50%;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.reason1 {
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    border-left: 4px solid #6b7ee5;
+    max-width: 50%;
+}
+
+.reason1 > p {
+    color: rgb(83, 61, 209);
+    font-style: bold;
+    margin-bottom: 6px;
+}
+
+.reason1 > span {
+    color: rgb(65, 64, 64);
+    font-size: 16px;
+}
+
+.reason2 > p {
+    color: rgb(83, 61, 209);
+    font-style: bold;
+    margin-bottom: 6px;
+}
+
+.reason2 > span {
+    color: rgb(65, 64, 64);
+    font-size: 16px;
+}
+
+.reason2 {
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    border-left: 4px solid #6b7ee5;
+    max-width: 50%;
+}
+
+.open-day-date {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 45vh;
+}
+
+.date-wrapper {
+    background-color: #f7fafc;
+    display: flex;
+    max-width: 100%;
+    min-width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    border-radius: 1rem;
+}
+
+.adjust-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.location a {
+    color: black;
+}
+
+.number {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.social-proof {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7fafc;
+}
+
+.cards {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.card {
+    background-color: #f9f4f2;
+    width: 375px;
+    height: 425px;
+    padding: 1.8rem;
+    border-radius: 1.3rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.msg {
+    font-size: 28px;
+    color: rgb(90, 89, 89);
+    margin-bottom: 4.5rem;
+}
+
+.name-loc {
+    font-size: 14px;
+    color: rgb(68, 68, 68);
 }
