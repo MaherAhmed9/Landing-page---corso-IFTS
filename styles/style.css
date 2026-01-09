@@ -243,10 +243,6 @@ li {
     gap: 0.7rem;
 }
 
-p span {
-    color: #2e3752;
-}
-
 .question {
     font-size: 17px;
     display: flex;
@@ -303,4 +299,34 @@ input:focus-visible {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.footer {
+    background-color: #2e3747;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.margin-h3 {
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.span-footer {
+    color: #fff;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #c3c6ca;
+    margin-top: 1rem;
+    font-size: 14px;
 }
