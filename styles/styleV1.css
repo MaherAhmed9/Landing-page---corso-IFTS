@@ -1,0 +1,332 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+    background: url("https://nuovaeducazione.it/wp-content/uploads/2019/10/open-day-2019-20-header-mail-01.png")
+        no-repeat;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-position: center;
+}
+
+h1 {
+    margin: 0.67em 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+.subtitle {
+    color: black;
+}
+
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.button:hover .icon {
+    transform: translate(4px);
+}
+
+.button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.section-why-choose {
+    background-color: #f7fafc;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.margin {
+    margin-top: 2.5%;
+    color: #2e3747;
+}
+
+.reasons {
+    width: 50%;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.reason1 {
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    border-left: 4px solid #6b7ee5;
+    max-width: 50%;
+}
+
+.reason1 > p {
+    color: rgb(83, 61, 209);
+    font-style: bold;
+    margin-bottom: 6px;
+}
+
+.reason1 > span {
+    color: rgb(65, 64, 64);
+    font-size: 16px;
+}
+
+.reason2 > p {
+    color: rgb(83, 61, 209);
+    font-style: bold;
+    margin-bottom: 6px;
+}
+
+.reason2 > span {
+    color: rgb(65, 64, 64);
+    font-size: 16px;
+}
+
+.reason2 {
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    border-left: 4px solid #6b7ee5;
+    max-width: 50%;
+}
+
+.open-day-date {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 45vh;
+}
+
+.date-wrapper {
+    background-color: #f7fafc;
+    display: flex;
+    max-width: 100%;
+    min-width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    border-radius: 1rem;
+}
+
+.adjust-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.location a {
+    color: black;
+}
+
+.number {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.social-proof {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f7fafc;
+}
+
+.cards {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.card {
+    background-color: #f9f4f2;
+    width: 375px;
+    height: 425px;
+    padding: 1.8rem;
+    border-radius: 1.3rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.msg {
+    font-size: 28px;
+    color: rgb(90, 89, 89);
+    margin-bottom: 4.5rem;
+}
+
+.name-loc {
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+}
+
+.faq {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.question {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8ef;
+    border-radius: 10px;
+    height: 70px;
+    width: 1200px;
+    padding: 1rem;
+}
+
+.forum-wrapper {
+    background-color: #f7fafc;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.sm {
+    font-size: 17px;
+}
+
+input {
+    border: 1px solid #ccd5df;
+    border-radius: 6px;
+    height: 50px;
+    padding: 0px 12px;
+}
+
+input:focus-visible {
+    border: 1px solid #6b7ee5;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 10px;
+}
+
+.prenota-btn {
+    color: #6b7ee7;
+    border: none;
+    background-color: #f7fafc;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #2e3747;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.margin-h3 {
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.span-footer {
+    color: #fff;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #c3c6ca;
+    margin-top: 1rem;
+    font-size: 14px;
+}

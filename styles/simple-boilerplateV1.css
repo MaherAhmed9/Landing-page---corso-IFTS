@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 1. Box sizing & resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Fluid and Accessible Typography */
+:root {
+    --font-main: system-ui, -apple-system, sans-serif;
+    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+html {
+    font-size: var(--text-base);
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: none; /* Mobile text inflation fix */
+}
+
+/* 3. Layout Defaults */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+}
+
+/* 4. Media & Interactive elements */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* 5. Modern Utilities */
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto; /* Logical properties */
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
